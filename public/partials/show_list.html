@@ -1,17 +1,14 @@
 
 
 
-<div class="flexList">
-<div ng-repeat="travel in ctrl.travels" ng-class="(travel.climate ? 'climate' : '' )">
+<!-- <div class="flexList">
+<div class="w3-third" ng-repeat="travel in ctrl.travels" ng-class="(travel.climate ? 'climate' : '' )">
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:5px">
 
-  
-   
 
 
-    <!--  -->
     <div class="details">
-        <!-- <h3>Travel Info:</h3> -->
+ 
         
         <h4>
             <span> Destination: </span>{{ travel.destination }}</h4>
@@ -21,18 +18,64 @@
             <span> Kid Friendly:</span> {{ travel.kid_friendly }}</h6>
         <p>
             <span> Dates: </span> {{ travel.dates }}</p>
-        <img style="width:100%;" ng-src='{{ travel.img }}' alt="Travel Image">
+        <img style="width:100%;" ng-src="{{ travel.img }}" alt="Travel Image">
         <p>
-            <span></span> {{ travel.description }}</p>
+            <span></span> {{ travel.description }}</p> -->
     
-    <!-- <div ng-click="ctrl.chooseOneTravel( travel )"> {{ travel.destination }} </div> -->
+    <div class="flexList">
+        <div class="third" ng-repeat="travel in ctrl.travels" >
+            <img style="width:100%;" ng-src="{{ travel.img }}" alt="Travel Image">
+            <h4>
+                <span> Destination: </span>{{ travel.destination }}</h4>
+            <h6>
+                <span> Climate: </span> {{ travel.climate }} </h6>
+            <h6>
+                <span> Kid Friendly:</span> {{ travel.kid_friendly }}</h6>
+            <p>
+                <span> Dates: </span> {{ travel.dates }}</p>
+            
+            <p>
+                <span></span> {{ travel.description }}</p>
+        
     <div>
-    <button href="/about"  ng-click="ctrl.showEdit( travel )">edit</button>
-    <button ng-click="ctrl.deleteTravel( travel._id )">remove</button>
+        <button href="/about"  ng-click="ctrl.showEdit( travel )">edit</button>
+        <button ng-click="ctrl.deleteTravel( travel._id )">remove</button>
+
+<input type="checkbox" ng-model="infoFlights"><span>View Flights</span>
+<input type="checkbox" ng-model="infoHotel"><span>View Hotels</span>
+
+<div ng-show="infoFlights">
+        <div >
+            <!-- <div ng-repeat="travel in ctrl.travels"></div> -->
+            <h4>Flights to {{travel.destination}}</h4>
+            <h4>Flights to {{travel.destination}}</h4>
+            <h4>Flights to {{travel.destination}}</h4>
+
+                <div class='widget' data-origin-geo-lookup="true" data-skyscanner-widget="LocationWidget" data-currency="USD" data-whitelabeldomain="whitelabeldemo.skyscanner.net"
+                    data-destination-name="{{ travel.destination }}"></div>
+
+        </div>
 </div>
+<div ng-show="infoHotel">
+    <div>
+    <!-- <div ng-repeat="travel in ctrl.travels"> -->
+    <h4>Hotels in {{travel.destination}}</h4>
+    <h4>Hotels in {{travel.destination}}</h4>
+    <h4>Hotels in {{travel.destination}}</h4>
+
+    </div>
 </div>
+
+
+ 
+<!-- <div class='widget' data-origin-geo-lookup="true" data-skyscanner-widget="LocationWidget" data-currency="USD" data-whitelabeldomain="whitelabeldemo.skyscanner.net"
+    data-destination-name="{{ travel.destination }}"></div> -->
+        
+    </div>
+    </div>
 </div>
-</div>
+
+
 
 
 

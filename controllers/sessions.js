@@ -9,9 +9,11 @@ const User = require('../models/users.js');
 const Location = require('../models/travels.js');
 
 router.post('/login', async (req, res) => {
+
     console.log('in the login route');
     console.log(req.body);
     console.log('==============================');
+
     try {
         const user = await User.findOne({ username: req.body.username }); // a document
         const location = await Location.find({ user: user._id });

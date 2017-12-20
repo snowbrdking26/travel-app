@@ -53,6 +53,10 @@
         <div class="logo2">Travels</div>
     </div>
 
+         {{ ctrl.test }}
+        
+
+
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="traveler">
     <h2 class="w3-wide">THE TRAVELER</h2>
     <p class="w3-opacity">
@@ -188,14 +192,7 @@
             <div ng-include="'partials/create_form.html'"></div>
             <!--//////  end of partials ////-->
         </div>
-         <!-- end of create form-->
 
-        <!-- start list of travel destinations -->
-    <!-- <div class="directions">
-        <h6>
-            <em>--click travel to view details--</em>
-        </h6>
-    </div> -->
         <div class="backgroundMiddle">
             <div class="tableDiv">
 
@@ -205,16 +202,7 @@
 
             </div>
        
-            <!-- <div class="details">
-                <h3>Travel Info:</h3>
-                <hr>
-                <h4><span> Destination: </span>{{ ctrl.travel.destination }}</h4>
-                <h6><span> Climate: </span> {{ ctrl.travel.climate }} </h6>
-                <h6><span> Kid Friendly:</span> {{ ctrl.travel.kid_friendly }}</h6>
-                <p><span> Dates: </span> {{ ctrl.travel.dates }}</p>
-                <img style="width:30%;" src="{{ ctrl.travel.img }}" alt="Travel Image">
-                <p> <span></span> {{ ctrl.travel.description }}</p>
-            </div> -->
+            
         </div>
 
       
@@ -231,9 +219,26 @@
     <!-- end CRUD routes -->
 
     <!-- Page content -->
-    <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
 
+<!-- ////// info modal partials////-->
+<div ng-include="'partials/info_modal.html'"></div>
+<!-- ////// end  ////-->
+
+
+
+
+
+<!-- skyscanner GEO IP search -->
+    <div class="skyscannerFlights" data-skyscanner-widget="SearchWidget" data-origin-geo-lookup="true" data-currency="USD" data-destination-name="'Paris'"></div>
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+
+
+<!-- <div class='widget' data-origin-geo-lookup="true" data-skyscanner-widget="LocationWidget" data-currency="USD" data-whitelabeldomain="whitelabeldemo.skyscanner.net"
+    data-destination-name="{{ travel.destination }}"></div> -->
+   
+
+    <!-- <button ng-click="ctrl.getTravelInfoFunction()">Get flight info</button> -->
 
 
 <!-- The Tour Section -->

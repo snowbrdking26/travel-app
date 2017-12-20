@@ -1,6 +1,7 @@
 // dependencies
 const express = require('express');
 const travels = express.Router();
+const travelAPIKEY = process.env.travelAPIKEY;
 
 // models
 const Travel = require('../models/travels.js');
@@ -47,5 +48,7 @@ travels.put('/:id', async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 });
+
+
 
 module.exports = travels;

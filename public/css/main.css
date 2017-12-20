@@ -360,3 +360,24 @@ table {
   color: black;
   text-align: center;
 }
+
+
+/* Sky Scanner Flights */
+.skyscannerFlights {
+margin: 5% 20%;
+}
+
+.widget + .widget {
+  margin: 5px;
+  display: block;
+}
+
+/* end sky scanner */
+
+.third {
+    width: 30%;
+    text-align: justify;
+    /* padding: 1%; */
+    margin: 1%;
+    /* border: 1px solid black; */
+}
