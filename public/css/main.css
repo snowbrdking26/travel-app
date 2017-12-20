@@ -1,0 +1,362 @@
+
+body {
+  margin: 0 auto;
+  font-family: "Lato", sans-serif
+}
+
+
+.detailsAbstract {
+	/* height: 210px; */
+	width: 100%;
+	overflow: hidden;
+	padding: 5px;
+	margin: 5px;
+
+}
+ul {
+	margin: 0 0;
+	
+}
+li {
+list-style-type: square;
+}
+
+textarea {
+   resize: none;
+}
+
+.centerTop {
+	text-align: center;
+		justify-content: center;
+}
+
+.chooseCountry {
+	width: 42%;
+	border: 1px solid black;
+		padding: 1%;
+	margin: 1%;
+}
+
+.detailsTop {
+	width: 100%;
+	padding: 5px;
+	margin: 5px;
+}
+
+.detailsInfo {
+	display: flex;
+	flex-direction: row;
+}
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.details {
+	border: 1px solid black;
+    /* width: 30%; */
+    /* min-width: 100px; */
+    max-width: 350px;
+	padding: 1%;
+    margin: 10px 10px ;
+    /* background-color: #BFD8D4; */
+    color: #162521;
+    letter-spacing: .1px;
+    text-align: justify;
+    align-content: stretch;
+
+}
+
+.createForm {
+    width: 100%;
+    text-align: center;
+    padding: 5px 10%;
+
+}
+
+
+.right {
+	width:20%;
+}
+
+.left {
+	width:60%;
+}
+
+.NewDataForm {
+	width: 94%;
+	border: 1px solid black;
+	padding: 10px;
+	margin: auto;
+}
+
+.AbstractWidth {
+	width: 50%;
+}
+
+.navOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #BB999C;;
+    color: #162521;
+}
+
+.logo {
+    margin: 0px 10px;
+    font-size: 30px;
+    padding: 5px;
+    width: 20%;
+    font-family: 'Times New Roman';
+    font-style: oblique;
+}
+
+
+.logo2 {
+     font-family: 'Times New Roman';
+    font-style: oblique;
+    padding-top: 180px;
+    font-size: 90px;
+    color: white;
+}
+
+.loginAtag {
+    margin: 20px 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 10px ;
+    padding: 2px 10px 2px 2px;
+    width: 400px;
+    /* justify-content: right; */
+    /* align-items: right; */
+}
+
+.menuImg {
+    margin: 7px 0 0 0;
+}
+
+
+.containerOne {
+  margin: 0px;
+
+}
+
+.welcome {
+    margin: 20px 10px;
+    /* width: 100%; */
+}
+
+.NewNavBara {
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    text-decoration: none !important;
+
+}
+
+.NewNavBara:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.NewNavBaraWelcome {
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    text-decoration: none;
+
+}
+
+.NewNavBarli {
+  color: black;
+  margin: 5px 5px;
+}
+
+
+.MenuThreeLinesSymbol {
+	color: black;
+	color: black;
+  margin: 5px 5px;
+  padding: 5px 5px;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.MenuThreeLinesSymbol:hover {
+  color: white;
+}
+
+.rightDivNav {
+    text-decoration: none ;
+}
+
+/* side nav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 12px 8px 12px 12px;
+    text-decoration: none;
+    color: #71697A;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.sidenav {
+  width: 0px;
+  font-size: 20px;
+}
+
+.sidenav a:hover {
+  color: #71697A
+}
+.closebtn {
+    position: absolute;
+    top: 0px;
+    color: #71697A;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    font-size: 36px;
+}
+
+.directions {
+    text-align: center;
+}
+
+.head {
+    background-image: url(/css/images/pexels-photo-59519.jpeg);
+    background-size: cover;
+  background-repeat: no-repeat;
+   /* background-attachment: fixed; */
+    background-position: center;
+    height: 500px;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    text-align: center;
+    /* background-color: #BFD8D4; */
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+.container {
+ margin: 0 auto;
+}
+
+.tableDiv{
+    margin: 0 0;
+}
+
+table {
+    border: 1px solid black;
+    text-align: left;
+}
+
+.button {
+    font-size: 5px;
+}
+
+.travelList {
+    font-size: 25px;
+}
+
+.flexList {
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* background-color: #BFD8D4; */
+    color: #162521;
+    margin: 5px 5px;
+    padding: 2px 5%;
+    height: auto;
+    min-width:450px;
+    /* border: 1px solid black; */
+}
+
+.ng-scope {
+    margin: 0 0;
+}
+
+.climate {
+    margin: 0 0;
+}
+
+.mySlides {
+    display: none
+}
+
+
+/* //-----Modals---------------- */
+
+.modalType {
+	background-color: rgba(0,0,0,.2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+	overflow: auto;
+    display:none;
+}
+
+
+
+.modal-text-box {
+  position:fixed;
+  text-align: center;
+	background-color: white;
+    top: 30%;
+    left:30%;
+	height: 398px;
+	width: 498px;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    text-align: left;
+    padding: 5% 5%;
+}
+
+.editModal {
+  display: inline-block;
+}
+
+.editModalForm {
+    margin: 5%;
+}
+
+.modalOpenLogin {
+  display: inline-block;
+}
+
+.modalOpenRegister {
+  display: inline-block;
+}
+
+.modalH2 {
+  color: black;
+  text-align: center;
+}

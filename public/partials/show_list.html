@@ -1,0 +1,38 @@
+
+
+
+<div class="flexList">
+<div ng-repeat="travel in ctrl.travels" ng-class="(travel.climate ? 'climate' : '' )">
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:5px">
+
+  
+   
+
+
+    <!--  -->
+    <div class="details">
+        <!-- <h3>Travel Info:</h3> -->
+        
+        <h4>
+            <span> Destination: </span>{{ travel.destination }}</h4>
+        <h6>
+            <span> Climate: </span> {{ travel.climate }} </h6>
+        <h6>
+            <span> Kid Friendly:</span> {{ travel.kid_friendly }}</h6>
+        <p>
+            <span> Dates: </span> {{ travel.dates }}</p>
+        <img style="width:100%;" ng-src='{{ travel.img }}' alt="Travel Image">
+        <p>
+            <span></span> {{ travel.description }}</p>
+    
+    <!-- <div ng-click="ctrl.chooseOneTravel( travel )"> {{ travel.destination }} </div> -->
+    <div>
+    <button href="/about"  ng-click="ctrl.showEdit( travel )">edit</button>
+    <button ng-click="ctrl.deleteTravel( travel._id )">remove</button>
+</div>
+</div>
+</div>
+</div>
+
+
+

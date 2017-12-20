@@ -1,0 +1,48 @@
+<div class="navOne">
+    <div class="logo">Travels</div>
+
+    <div class="menu">
+
+
+
+
+        <!-- if not logged in -->
+
+
+        <div class="rightDivNav" ng-if='!ctrl.user'>
+            <a class="NewNavBara" href="#" ng-click="ctrl.showLoginModal()">
+            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </div>
+        <div class="rightDivNav" ng-if='!ctrl.user'>
+            <a class="NewNavBara" href="#" ng-click="ctrl.showRegisterModal()"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        </div>
+
+
+        <!-- if logged in -->
+
+        <div class="rightDivNav" ng-if='ctrl.user'>
+            <span class="NewNavBara">Welcome,
+                 {{ ctrl.user.username }} !</span>
+        </div>
+        <div class="rightDivNav" ng-if='ctrl.user'>
+            <a class="NewNavBara" href="#" ng-click='ctrl.logout()'>
+                <span class="glyphicon glyphicon-log-out"></span> Log Out</a>
+        </div>
+
+
+        <!-- menu -->
+
+        <div class="rightDivNav">
+            <span class="MenuThreeLinesSymbol" ng-click="ctrl.openNav()">&#9776; Menu</span>
+        </div>
+
+        <div class="sidenav" id="mySidenav">
+            <a class="closebtn" href="#" ng-click="ctrl.closeNav()">&times;</a>
+            <a class="NewNavBara" href="/itineraries">Itineraries</a>
+            <a class="NewNavBara" href="/restuarants">Restuarants</a>
+            <a class="NewNavBara" href="/hotels">Hotels</a>
+            <a class="NewNavBara" href="/galleries">Galleries</a>
+        </div>
+
+    </div>
+</div>

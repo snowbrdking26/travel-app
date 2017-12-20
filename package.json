@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-sessions": "^1.0.6",
+    "mongoose": "^4.13.7",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.7",
+    "pretty-error": "^2.1.1",
+    "sessions": "0.0.2-7"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "travels-app",
+  "description": "Travel App",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowbrdking26/travels-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snowbrdking26/travels-app/issues"
+  },
+  "homepage": "https://github.com/snowbrdking26/travels-app#readme"
+}

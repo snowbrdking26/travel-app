@@ -1,0 +1,53 @@
+
+<div class="createForm">
+<form ng-submit="ctrl.createTravel()">
+
+<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+    <div class="w3-half">
+        <input class="w3-input w3-border" type="text" ng-model="ctrl.createForm.destination" placeholder="Travel destination" required name="Name">
+    </div>
+    <div class="w3-half">
+        <input class="w3-input w3-border" type="text" ng-model="ctrl.createForm.climate" placeholder="Travel climate" required name="Email">
+    </div>
+    <div class="w3-half">
+        <input class="w3-input w3-border" type="text" ng-model="ctrl.createForm.dates" placeholder="Travel dates" required
+            name="Email">
+    </div>
+    <div class="w3-half">
+        <input class="w3-input w3-border" type="text" ng-model="ctrl.createForm.kid_friendly" placeholder="Travel kid_friendly" required
+            name="Email">
+    </div>
+    <div class="w3-half">
+        <input class="w3-input w3-border" type="text" ng-model="ctrl.createForm.img" placeholder="Travel img" required
+            name="Email">
+    </div>
+    <div class="w3-half">
+         <textarea class="w3-input w3-border" style="overflow:hidden;" type="text" ng-model="ctrl.createForm.description" placeholder="Travel Description" /></textarea>
+    </div>
+    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+</div>
+<!-- <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"> -->
+
+
+    <!--  -->
+    <!-- <div>
+        <input type="text" ng-model="ctrl.createForm.destination" placeholder="Travel destination" />
+    </div>
+    <div>
+        <input type="text" ng-model="ctrl.createForm.climate" placeholder="Travel climate" />
+    </div>
+    <div>
+        <input type="text" ng-model="ctrl.createForm.dates" placeholder="Travel dates" />
+    </div>
+    <div>
+        <input type="text" ng-model="ctrl.createForm.kid_friendly" placeholder="Travel Kid Friendly" />
+    </div>
+    <div>
+        <input type="text" ng-model="ctrl.createForm.img" placeholder="Travel Image" />
+    </div>
+    <div>
+        <textarea style="overflow:hidden;" type="text" ng-model="ctrl.createForm.img" placeholder="Travel Description" /></textarea>
+    </div>
+    <input type="submit" value="Create New Travel" /> -->
+</form>
+</div>
