@@ -17,7 +17,6 @@ const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/travel_users_ap
 
 // Connect to Mongo
 
-
 mongoose.connect(mongoURI, { useMongoClient: true });
 const db = mongoose.connection;
 db.on('error', (err) => console.log('Mongo error: ', err));
@@ -62,10 +61,14 @@ app.get('/hotelsParis', (req, res) => {
     res.send({ hotelsParis: process.env.hotelsParis });
 });
 
-app.get('/flightsParis', (req, res) => {
-    res.send({ flightsParis: process.env.flightsParis });
+
+app.get('/hotelsJamaica', (req, res) => {
+    res.send({ hotelsJamaica: process.env.hotelsJamaica });
 });
 
+app.get('/hotelsLondon', (req, res) => {
+    res.send({ hotelsLondon: process.env.hotelsLondon });
+});
 
 
 

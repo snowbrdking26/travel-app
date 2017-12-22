@@ -1,6 +1,6 @@
 <div class="flexList">
-    <div class="third" ng-repeat="travel in ctrl.travels" >
-        <img class="card-img-top" style="width:100%;" ng-src="{{ travel.img }}" alt="Travel Image">
+    <div class="w3-third w3-margin-bottom" style="padding:0 8px;" ng-repeat="travel in ctrl.travels">
+        <img style="width:100%;" ng-src="{{ travel.img }}" alt="Travel Image">
         <h4>
             <span> Destination: </span>{{ travel.destination }}</h4>
         <h6 class="h6left">
@@ -12,39 +12,24 @@
 
         <p>
             <span></span> {{ travel.description }}</p>
+
 <div>
     <button href="/about"  ng-click="ctrl.showEdit( travel )">edit</button>
     <button ng-click="ctrl.deleteTravel( travel._id )">remove</button>
 
-<!-- <input type="checkbox" ng-model="infoFlights"><span>View Flights</span>
-<input type="checkbox" ng-model="infoHotel"><span>View Hotels</span> -->
 
-<div ng-show="infoFlights">
+
+
     <div >
         <!-- <div ng-repeat="travel in ctrl.travels"></div> -->
-        <h4>Flights to {{travel.destination}}</h4>
-        <h4>Flights to {{travel.destination}}</h4>
-        <h4>Flights to {{travel.destination}}</h4>
+     
 
             <div class='widget' data-origin-geo-lookup="true" data-skyscanner-widget="LocationWidget" data-currency="USD" data-whitelabeldomain="whitelabeldemo.skyscanner.net"
                 data-destination-name="{{ travel.destination }}"></div>
-
     </div>
-</div>
-<div ng-show="infoHotel">
-<div>
-<!-- <div ng-repeat="travel in ctrl.travels"> -->
-<h4>Hotels in {{travel.destination}}</h4>
-<h4>Hotels in {{travel.destination}}</h4>
-<h4>Hotels in {{travel.destination}}</h4>
-
-</div>
-</div>
 
 
 
-<!-- <div class='widget' data-origin-geo-lookup="true" data-skyscanner-widget="LocationWidget" data-currency="USD" data-whitelabeldomain="whitelabeldemo.skyscanner.net"
-data-destination-name="{{ travel.destination }}"></div> -->
 
 </div>
 </div>

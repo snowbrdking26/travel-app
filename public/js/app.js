@@ -339,8 +339,8 @@ app.controller('MainController', ['$http', function ($http) {
                     url: this.hotelsParis,
                     method: 'GET'
                 }).then(response => {
-                    this.travelInfos = response.data.results
-                    console.log(this.travelInfos)
+                    this.travelInfosParis = response.data.results
+                    console.log(this.travelInfosParis)
                     // this.hotelsParisParsed = JSON.parse(travelInfos)
                     // console.log(this.hotelsParisParsed)
                 })
@@ -348,28 +348,80 @@ app.controller('MainController', ['$http', function ($http) {
             }
 
 
-    //Flight schedules
 
     $http({
-        url: '/flightsParis',
+        url: '/hotelsLondon',
         method: 'GET'
     }).then(response => {
-        this.flightsParis = response.data.flightsParis
+        // this.travelauth = response.data.travelauth
+        this.hotelsLondon = response.data.hotelsLondon
     })
         .catch(err => console.log(err));
 
-            this.flightsParisfunction = () => {
-                console.log('getting Paris flights array!')
-                console.log(this.flightsParis)
-                $http({
-                    url: this.flightsParis,
-                    method: 'GET'
-                }).then(response => {
-                    this.travelInfos = response.data;
-                    console.log(this.travelInfos)
-                })
-                    .catch(err => console.log(err));
-            }
+
+    this.hotelsLondonfunction = () => {
+        console.log('getting hotels London array!')
+        $http({
+            url: this.hotelsLondon,
+            method: 'GET'
+        }).then(response => {
+            this.travelInfosLondon = response.data.results
+            console.log(this.travelInfosLondon)
+            // this.hotelsLondonParsed = JSON.parse(travelInfos)
+            // console.log(this.hotelsLondonParsed)
+        })
+            .catch(err => console.log(err));
+    }
+
+
+
+    $http({
+        url: '/hotelsJamaica',
+        method: 'GET'
+    }).then(response => {
+        // this.travelauth = response.data.travelauth
+        this.hotelsJamaica = response.data.hotelsJamaica
+    })
+        .catch(err => console.log(err));
+
+
+    this.hotelsJamaicafunction = () => {
+        console.log('getting hotels Jamaica array!')
+        $http({
+            url: this.hotelsJamaica,
+            method: 'GET'
+        }).then(response => {
+            this.travelInfosJamaica = response.data.results
+            console.log(this.travelInfosJamaica)
+            // this.hotelsParisParsed = JSON.parse(travelInfos)
+            // console.log(this.hotelsParisParsed)
+        })
+            .catch(err => console.log(err));
+    }
+
+
+    //Flight schedules
+
+    // $http({
+    //     url: '/flightsParis',
+    //     method: 'GET'
+    // }).then(response => {
+    //     this.flightsParis = response.data.flightsParis
+    // })
+    //     .catch(err => console.log(err));
+
+    //         this.flightsParisfunction = () => {
+    //             console.log('getting Paris flights array!')
+    //             console.log(this.flightsParis)
+    //             $http({
+    //                 url: this.flightsParis,
+    //                 method: 'GET'
+    //             }).then(response => {
+    //                 this.travelInfos = response.data;
+    //                 console.log(this.travelInfos)
+    //             })
+    //                 .catch(err => console.log(err));
+    //         }
 
 
 
