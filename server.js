@@ -17,6 +17,7 @@ const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/travel_users_ap
 
 // Connect to Mongo
 
+
 mongoose.connect(mongoURI, { useMongoClient: true });
 const db = mongoose.connection;
 db.on('error', (err) => console.log('Mongo error: ', err));
