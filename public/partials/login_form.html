@@ -1,12 +1,10 @@
-
-
 <!-- modal -->
 <div class="modalType" ng-class="(ctrl.modalOpenLogin ? 'modalOpenLogin' : '' )">
-<div class="modal-text-box">
+    <div class="modal-text-box">
 
-    
 
-    <h2 class="modalH2">Login</h2>
+
+        <h2 class="modalH2">Login</h2>
         <form ng-submit='ctrl.loginUser()'>
             <div class="form-group">
                 <label for="pwd">Username:</label>
@@ -22,14 +20,12 @@
             <input type="submit" />
         </form>
 
-    <form ng-if='ctrl.user' ng-submit='ctrl.logout()'>
-        <input type='submit' value='logout' />
-    </form>
+        <form ng-if='ctrl.user' ng-submit='ctrl.logout()'>
+            <input type='submit' value='logout' />
+        </form>
 
-    
-<button ng-click="ctrl.closeLoginModal()">Return to Website</button>
-             
-        </div>
+
+        <button ng-click="ctrl.closeLoginModal()">Return to Website</button>
+
     </div>
-
-
+</div>

@@ -9,23 +9,17 @@
             <input type="text" class="form-control" placeholder="username" ng-model="ctrl.newUserForm.username" />
             <!-- <input type="password" class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="password" ng-model="ctrl.loginForm.password"> -->
 
-
             <div class="form-group">
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" placeholder="password" ng-model="ctrl.newUserForm.password" />
             </div>
-
             <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Remember me</label>
+                <label><input type="checkbox"> Remember me</label>
             </div>
-            <input type="submit" />
+            <input ng-click='ctrl.closeRegisterModal()' type="submit" />
         </form>
 
         <button ng-click="ctrl.closeRegisterModal()">Return to Website</button>
 
     </div>
 </div>
-
-        </div>
-

@@ -1,5 +1,5 @@
 const app = angular.module('TravelsApp', ['ngRoute']);
-// const travelAPIKEY = process.env.travelAPIKEY;
+
 
 app.controller('MainController', ['$http', function ($http) {
 
@@ -162,7 +162,10 @@ app.controller('MainController', ['$http', function ($http) {
         }).catch(err => console.error('Catch: ', err));
     }
 
-
+    // fuction to close nav after clicking login or sign up
+    this.closeNav = () => {
+      $('.navbar-toggle').class('');
+    }
 
     //-Modal---open/close------------------
     this.showLoginModal = () => {
@@ -192,7 +195,7 @@ app.controller('MainController', ['$http', function ($http) {
     }
 
     this.closeNav = () => {
-        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("newbar").style.height = "0";
     }
     //--end--side nav----------------
 
@@ -290,10 +293,10 @@ app.controller('MainController', ['$http', function ($http) {
 
     }]);
 
-    //-----google map API---------------------
+    //-----google map ---------------------
 
 
-    //To use this code on your website, get a free API key from Google.
+    //To use this code on your website, get a free key from Google.
     // Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
     // function myMap() {
@@ -314,35 +317,94 @@ app.controller('MainController', ['$http', function ($http) {
 
 
 
-// Travel API request -----------------------------
+// Travel Info - Amadeus travel request ----------------
 
     // this.destination = {};
     // this.departureDate = [];
     // this.tripDuration = [];
     // this.test = 'works';
     $http({
-        url:'/travelkey',
+        url:'/hotelsParis',
         method: 'GET'
     }).then(response => {
-        this.accesskey = response.data.apikey
+        // this.travelauth = response.data.travelauth
+        this.hotelsParis = response.data.hotelsParis
     })
         .catch(err => console.log(err));
 
 
-this.url = 'http://api.sandbox.amadeus.com/v1.2/flights/low-fare-search?origin=IST&destination=BOS&departure_date=2018-01-03&return_date=2018-01-10&number_of_results=3&apikey=' + this.accesskey + '';
+            this.hotelsParisfunction = () => {
+                console.log('getting hotels Paris array!')
+                $http({
+                    url: this.hotelsParis,
+                    method: 'GET'
+                }).then(response => {
+                    this.travelInfos = response.data.results
+                    console.log(this.travelInfos)
+                    // this.hotelsParisParsed = JSON.parse(travelInfos)
+                    // console.log(this.hotelsParisParsed)
+                })
+                    .catch(err => console.log(err));
+            }
 
 
-    this.getTravelInfoFunction = () => {
-        console.log('getting travel array!')
-        $http({
-            url: this.url,
-            method: 'GET'
-        }).then(response => {
-            this.travelInfos = response.data;
-            console.log(this.travelInfos)
-        })
-            .catch(err => console.log(err));
-    }
+    //Flight schedules
+
+    $http({
+        url: '/flightsParis',
+        method: 'GET'
+    }).then(response => {
+        this.flightsParis = response.data.flightsParis
+    })
+        .catch(err => console.log(err));
+
+            this.flightsParisfunction = () => {
+                console.log('getting Paris flights array!')
+                console.log(this.flightsParis)
+                $http({
+                    url: this.flightsParis,
+                    method: 'GET'
+                }).then(response => {
+                    this.travelInfos = response.data;
+                    console.log(this.travelInfos)
+                })
+                    .catch(err => console.log(err));
+            }
+
+
+
+
+
+
+
+            //end travel ---
+
+
+
 
 
 }]);
+
+// fade requestAnimation
+// $this.fade = () => {
+//     let doc = this,
+//     fadeMe = $('.fadeMe');
+//
+//     doc.on('scroll', () => {
+//       let scrollpos = this.scrollTop() ;
+//       fadeMe.each(() => {
+//         let elemoffsetBottom = this.offset().bottom;
+//         if (scrollpos > elemoffsetBottom) {
+//           this.css('opacity', 1 - (scrollpos - elemoffsetTop)/400; )
+//         }
+//       })
+//     })
+// }
+$(() => {
+  let $this = this;
+  $('*').each((i) => {
+    setTimeout((i) => {
+      $('*').eq(i).addClass('is-visible');
+    }, i * i);
+  });
+})

@@ -51,10 +51,27 @@ app.get('/test', (req, res) => {
     res.send(req.session);
 });
 
+//original
 app.get('/travelkey', (req, res) => {
-
-    res.send({ apikey: process.env.travelAPIKEY });
+    res.send({ travelauth: process.env.travelauth });
 });
+
+//links
+app.get('/hotelsParis', (req, res) => {
+    res.send({ hotelsParis: process.env.hotelsParis });
+});
+
+app.get('/flightsParis', (req, res) => {
+    res.send({ flightsParis: process.env.flightsParis });
+});
+
+
+
+
+
+
+
+
 
 
 

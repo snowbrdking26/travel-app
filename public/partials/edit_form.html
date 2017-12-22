@@ -1,34 +1,31 @@
-
-
-
 <div class="modalType" ng-class="(ctrl.editModal ? 'editModal' : '' )">
     <div class="modal-text-box">
         <h6 class="h6Forms">Edit Form</h6>
-    <form class="editModalForm" ng-submit="ctrl.editTravel()" class="center">
-        <div class="inlineBlock">
-            <input type="text" ng-model="ctrl.currentTravelEdit.destination" placeholder="Destination" >
-        </div>
+        <form class="editModalForm" ng-submit="ctrl.editTravel()" class="center">
+            <div class="inlineBlock">
+                <input type="text" ng-model="ctrl.currentTravelEdit.destination" placeholder="Destination">
+            </div>
 
-        <div class="inlineBlock">
-            <input type="text" ng-model="ctrl.currentTravelEdit.climate" placeholder="Climate" >
-        </div>
+            <div class="inlineBlock">
+                <input type="text" ng-model="ctrl.currentTravelEdit.climate" placeholder="Climate">
+            </div>
 
-        <div class="inlineBlock">
-            <input type="text" ng-model="ctrl.currentTravelEdit.kid_friendly" placeholder="Kid Friendly" >
-        </div>
+            <div class="inlineBlock">
+                <input type="text" ng-model="ctrl.currentTravelEdit.kid_friendly" placeholder="Kid Friendly">
+            </div>
 
-        <div class="inlineBlock">
-            <input type="text"  ng-model="ctrl.currentTravelEdit.dates" placeholder="Dates" >
-        </div>
-        <div class="inlineBlock">
+            <div class="inlineBlock">
+
+                <input type="text" ng-model="ctrl.currentTravelEdit.dates" placeholder="Dates">
+            </div>
+          <div class="inlineBlock">
             <input type="img" ng-model="ctrl.currentTravelEdit.img" placeholder="Image URL">
-        </div>
+          </div>
         <textarea style="overflow:hidden" rows="4" cols="40" ng-model="ctrl.currentTravelEdit.description">
-        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
         </textarea>
         <br>
         <input type="submit" value="Update Travel Destination" class="updateBtn">
-        
+
     </form>
-</div>
 </div>

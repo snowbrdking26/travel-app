@@ -1,8 +1,184 @@
+*{
+  /*opacity: .9;*/
+}
+.w3-padding{
+  list-style: none;
+}
+.is-visible{
+  animation: Items 600ms linear backwards;
+}
+
+@keyframes Items {
+  0%{
+    opacity: 0;
+  },
+  100%{
+    opacity: 1;
+  }
+}
 
 body {
-  margin: 0 auto;
-  font-family: "Lato", sans-serif
+  /*margin: 0 auto;*/
+  /*font-family: "Lato", sans-serif*/
+  padding-bottom: 40px;
+  /*padding-top: 5%;*/
+  /*padding-right: 2.5%;*/
+  /*padding-left: 2.5%;*/
+  color: #5a5a5a;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font weight: 400px;
+  background: #f4f4f4;
+
 }
+
+h3, h4, p, b, h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font weight: 400px;
+}
+
+h6 {
+
+  text-align: center;
+  justify-content: center;
+  }
+
+.h6left {
+
+  text-align: left;
+  }
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+  position: fixed;
+  z-index: 1000000000 !important;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/*CARDS
+-------------------------------------------------- */
+
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  border-radius: 3px;
+  padding: 0px 4px 0px 0px;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+.card-img-top  {
+  height: 180px;
+  width: 300px;
+
+
+}
+
+
+/*RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .modal-text-box{
+    /*position: relative;
+    margin-top: 400px;
+    z-index: 100000000000;*/
+    position: fixed;
+    z-index: 1000000001 !important;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
 
 
 .detailsAbstract {
@@ -15,7 +191,7 @@ body {
 }
 ul {
 	margin: 0 0;
-	
+
 }
 li {
 list-style-type: square;
@@ -100,7 +276,7 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #BB999C;;
+    background-color: #BB999C;
     color: #162521;
 }
 
@@ -109,14 +285,14 @@ textarea {
     font-size: 30px;
     padding: 5px;
     width: 20%;
-    font-family: 'Times New Roman';
-    font-style: oblique;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
 }
 
 
 .logo2 {
-     font-family: 'Times New Roman';
-    font-style: oblique;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
     padding-top: 180px;
     font-size: 90px;
     color: white;
@@ -153,11 +329,13 @@ textarea {
 
 .NewNavBara {
     display: block;
-    color: black;
-    text-align: center;
+    color: #9d9d9d;
+    /*text-align: center;*/
     margin: 5px 5px;
+    margin-left: 10px;
     padding: 5px 5px;
     text-decoration: none !important;
+    text-shadow: 2px white;
 
 }
 
@@ -204,8 +382,8 @@ textarea {
 .sidenav {
     height: 100%;
     width: 0;
-    position: fixed;
-    z-index: 1;
+    /*position: fixed;*/
+    /*z-index: 1;*/
     top: 0;
     right: 0;
     background-color: white;
@@ -262,7 +440,9 @@ textarea {
     padding: 10px 5px;
 }
 .container {
- margin: 0 auto;
+  width: 100% !important;
+  /*margin: 0 auto;*/
+  padding: 0;
 }
 
 .tableDiv{
@@ -326,20 +506,6 @@ table {
 
 
 
-.modal-text-box {
-  position:fixed;
-  text-align: center;
-	background-color: white;
-    top: 30%;
-    left:30%;
-	height: 398px;
-	width: 498px;
-	border-radius: 2px;
-	box-shadow: 0 2px 2px rgba(0,0,0,.2);
-    text-align: left;
-    padding: 5% 5%;
-}
-
 .editModal {
   display: inline-block;
 }
@@ -372,6 +538,7 @@ margin: 5% 20%;
   display: block;
 }
 
+
 /* end sky scanner */
 
 .third {
@@ -381,3 +548,24 @@ margin: 5% 20%;
     margin: 1%;
     /* border: 1px solid black; */
 }
+
+.modal-text-box {
+  position:relative;
+  text-align: center;
+	background-color: white;
+  top: 15%;
+  /*left:30%;*/
+  margin-top: 200px;
+	height: 398px;
+	width: 498px;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  text-align: left;
+  padding: 5% 5%;
+  margin: 0 auto;
+
+}
+
+/*input:hover{
+  transition: scale(1.1);
+}*/

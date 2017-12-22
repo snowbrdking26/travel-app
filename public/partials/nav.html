@@ -1,47 +1,97 @@
-<div class="navOne">
-    <div class="logo">Travels</div>
+<body>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-    <div class="menu">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header" >
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">TRAVEL-TRIPN</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="/hotels">HOTELS</a></li>
+                <li><a href="/galleries">GALLERIES</a></li>
+                <li><a href="/itineraries">ITINERARIES</a></li>
+                <li><a href="/restuarants">RESTURANTS</a></li>
+                <!-- if not logged in -->
+                <li ng-if='!ctrl.user'>
+                    <a href="#"  ng-click="ctrl.showLoginModal()">
+                    <span class="glyphicon glyphicon-log-in "></span> Login</a>
+                </li>
+                <li ng-if='!ctrl.user'>
+                    <a href="#" ng-click="ctrl.showRegisterModal()"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li>
+                <!-- if logged in -->
+                <li ng-if='ctrl.user'>
+                    <span class="NewNavBara">Welcome,
+                         {{ ctrl.user.username }} !</span>
+                </li>
+
+                <li ng-if='ctrl.user'>
+                    <a href="#" ng-click='ctrl.logout()'>
+                        <span class="glyphicon glyphicon-log-out"></span> Log Out</a>
+                </li>
+              </ul>
+              </div>
+            </div>
+        </nav>
+      </div>
+    </div>
 
 
 
+<!-- <div class="navOne">
+    <div class="logo">TRAVELS</div>
 
-        <!-- if not logged in -->
+    <div class="menu"> -->
+
+<!-- <div class="navOne">
+    <div class="logo">TRAVELS</div>
+    <div class="menu"> -->
 
 
-        <div class="rightDivNav" ng-if='!ctrl.user'>
+<!-- if not logged in -->
+
+        <!-- <div class="rightDivNav" ng-if='!ctrl.user'>
             <a class="NewNavBara" href="#" ng-click="ctrl.showLoginModal()">
             <span class="glyphicon glyphicon-log-in"></span> Login</a>
         </div>
         <div class="rightDivNav" ng-if='!ctrl.user'>
             <a class="NewNavBara" href="#" ng-click="ctrl.showRegisterModal()"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-        </div>
+        </div> -->
 
 
-        <!-- if logged in -->
+<!-- if logged in -->
 
-        <div class="rightDivNav" ng-if='ctrl.user'>
+        <!-- <div class="rightDivNav" ng-if='ctrl.user'>
             <span class="NewNavBara">Welcome,
                  {{ ctrl.user.username }} !</span>
         </div>
         <div class="rightDivNav" ng-if='ctrl.user'>
             <a class="NewNavBara" href="#" ng-click='ctrl.logout()'>
                 <span class="glyphicon glyphicon-log-out"></span> Log Out</a>
-        </div>
+        </div> -->
 
 
-        <!-- menu -->
+<!-- menu -->
 
-        <div class="rightDivNav">
+        <!-- <div class="rightDivNav">
             <span class="MenuThreeLinesSymbol" ng-click="ctrl.openNav()">&#9776; Menu</span>
         </div>
-
         <div class="sidenav" id="mySidenav">
             <a class="closebtn" href="#" ng-click="ctrl.closeNav()">&times;</a>
             <a class="NewNavBara" href="/itineraries">Itineraries</a>
             <a class="NewNavBara" href="/restuarants">Restuarants</a>
             <a class="NewNavBara" href="/hotels">Hotels</a>
             <a class="NewNavBara" href="/galleries">Galleries</a>
-        </div>
-    </div>
+        </div> -->
+
+</div>
 </div>
