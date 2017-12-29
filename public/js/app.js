@@ -399,64 +399,13 @@ app.controller('MainController', ['$http', function ($http) {
             .catch(err => console.log(err));
     }
 
-
-    //Flight schedules
-
-    // $http({
-    //     url: '/flightsParis',
-    //     method: 'GET'
-    // }).then(response => {
-    //     this.flightsParis = response.data.flightsParis
-    // })
-    //     .catch(err => console.log(err));
-
-    //         this.flightsParisfunction = () => {
-    //             console.log('getting Paris flights array!')
-    //             console.log(this.flightsParis)
-    //             $http({
-    //                 url: this.flightsParis,
-    //                 method: 'GET'
-    //             }).then(response => {
-    //                 this.travelInfos = response.data;
-    //                 console.log(this.travelInfos)
-    //             })
-    //                 .catch(err => console.log(err));
-    //         }
-
-
-
-
-
-
-
             //end travel ---
 
 
-
-
+    AOS.init({
+        // easing: 'ease-out-back',
+        duration: 3000
+    })
 
 }]);
 
-// fade requestAnimation
-// $this.fade = () => {
-//     let doc = this,
-//     fadeMe = $('.fadeMe');
-//
-//     doc.on('scroll', () => {
-//       let scrollpos = this.scrollTop() ;
-//       fadeMe.each(() => {
-//         let elemoffsetBottom = this.offset().bottom;
-//         if (scrollpos > elemoffsetBottom) {
-//           this.css('opacity', 1 - (scrollpos - elemoffsetTop)/400; )
-//         }
-//       })
-//     })
-// }
-$(() => {
-  let $this = this;
-  $('*').each((i) => {
-    setTimeout((i) => {
-      $('*').eq(i).addClass('is-visible');
-    }, i * i);
-  });
-})

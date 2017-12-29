@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+   
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 </head>
 
@@ -169,12 +169,14 @@
 
     <!-- skyscanner GEO IP search -->
     <div class="skyscannerFlights" data-skyscanner-widget="SearchWidget" data-origin-geo-lookup="true" data-currency="USD"></div>
+    
     <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+    <a name='hotels'></a>
 
     <!-- Hotels Section -->
     <div class="w3-grey" id="itineraries">
         <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
-            <h2 class="w3-wide w3-center">HOTELS</h2>
+            <h2 data-aos="zoom-in" class="w3-wide w3-center">HOTELS</h2>
             <p class="w3-opacity w3-center">
                 <h6>Remember to book a room!</h6>
             </p>
@@ -193,7 +195,7 @@
             </ul>
 
             <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-                <div class="w3-third w3-margin-bottom">
+                <div data-aos="slide-right" class="w3-third w3-margin-bottom">
                     <img src="/css/images/JamaicaHotel.jpeg" alt="Jamaica" style="width:100%" class="w3-hover-opacity">
                     <div class="w3-container w3-white">
                         <br>
@@ -214,17 +216,14 @@
                                 <h6>{{ctrl.travelInfosJamaica[1].property_name}} at ${{ctrl.travelInfosJamaica[1].total_price.amount}}</h6>
                                 <h6>{{ctrl.travelInfosJamaica[2].property_name}} at ${{ctrl.travelInfosJamaica[2].total_price.amount}}</h6>
                                 <h6>{{ctrl.travelInfosJamaica[3].property_name}} at ${{ctrl.travelInfosJamaica[3].total_price.amount}}</h6>
-                                <h6>{{ctrl.travelInfosJamaica[4].property_name}} at ${{ctrl.travelInfosJamaica[4].total_price.amount}}</h6>
-                            
-                        
-                        
+
                             </div>
                         </div>
                         <br>
                     </div>
                 </div>
                 
-                <div class="w3-third w3-margin-bottom">
+                <div data-aos="flip-down" class="w3-third w3-margin-bottom">
                     <img src="/css/images/LondonHotel.jpeg" alt="London" style="width:100%; height:auto;" class="w3-hover-opacity">
                     <div class="w3-container w3-white">
                         <br>
@@ -256,7 +255,7 @@
                         <br>
                     </div>
                 </div>
-                <div class="w3-third w3-margin-bottom">
+                <div data-aos="slide-left" class="w3-third w3-margin-bottom">
                     <img src="/css/images/ParisHotel.jpeg" alt="Paris" style="width:100%" class="w3-hover-opacity">
                     <div class="w3-container w3-white">
                         <br>
@@ -291,20 +290,21 @@
                     </div>
                   </div>
                 </div>
+                <a name='restuarants'></a>
                 </div>
 
                     <!-- Restaurant Section -->
                     <div style="background-color:#F1F1F1; width: 100%">
                     <div class="w3-lightgrey" id="itineraries">
                         <div class="w3-container w3-content w3-padding-64" style="max-width:1000px" >
-                            <h2 class="w3-wide w3-center">RESTAURANTS</h2>
+                            <h2 data-aos="zoom-in" class="w3-wide w3-center">RESTAURANTS</h2>
                             <p class="w3-opacity w3-center">
                                 <h6>Remember to reserve a seat!</h6>
                             </p>
              
                         
                         <div class="w3-row-padding w3-padding" style="margin:0 -16px">
-                            <div class="w3-third w3-margin-bottom">
+                            <div data-aos="flip-left" class="w3-third w3-margin-bottom">
                                 <img src="/css/images/JamaicanRestaurant.jpeg" alt="Jamaica" style="width:100%" class="w3-hover-opacity">
                                 <div class="w3-container w3-white">
                                     <br>
@@ -316,7 +316,7 @@
                                     <a href="https://www.tripadvisor.com/Restaurant_Review-g7099629-d3907659-Reviews-Zimbali_s_Mountain_Cooking_Studio-Little_London_Negril_Westmoreland_Parish_Jamai.html"><button class="w3-button w3-grey w3-section w3-left">View Restaurant</button></a>
                                 </div>
                             </div>
-                            <div class="w3-third w3-margin-bottom">
+                            <div data-aos="flip-up" class="w3-third w3-margin-bottom">
                                 <img src="/css/images/LondonRestaurant.jpeg" alt="London" style="width:100%" class="w3-hover-opacity">
                                 <div class="w3-container w3-white">
                                     <br>
@@ -328,7 +328,7 @@
                                     <a href="https://www.tripadvisor.com/Restaurant_Review-g186338-d1015979-Reviews-Duke_of_York-London_England.html"> <button class="w3-button w3-grey w3-section w3-left">View Restaurant</button></a>
                                 </div>
                             </div>
-                            <div class="w3-third w3-margin-bottom">
+                            <div data-aos="flip-right" class="w3-third w3-margin-bottom">
                                 <img src="/css/images/ParisRestaurant.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
                                 <div class="w3-container w3-white">
                                     <br>
@@ -350,7 +350,7 @@
                 <div class="w3-grey" id="itineraries" >
                     <div class="w3-container w3-content w3-padding-64" >
                 <div class="w3-container w3-content w3-padding-64" style="max-width:600px; color: white;" id="contact">
-                    <h2 class="w3-wide w3-center">CONTACT</h2>
+                    <h2 data-aos="zoom-in" class="w3-wide w3-center">CONTACT</h2>
                     <p class="w3-opacity w3-center">
                         <h6>Sign-up for latest travel ideas</h6>
                     </p>

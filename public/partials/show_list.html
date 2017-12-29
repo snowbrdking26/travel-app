@@ -1,5 +1,5 @@
 <div class="flexList">
-    <div class="w3-third w3-margin-bottom" style="padding:0 8px;" ng-repeat="travel in ctrl.travels">
+    <div  data-aos="zoom-in" class="w3-third w3-margin-bottom" style="padding:0 8px;" ng-repeat="travel in ctrl.travels">
         <img style="width:100%;" ng-src="{{ travel.img }}" alt="Travel Image">
         <h4>
             <span> Destination: </span>{{ travel.destination }}</h4>
@@ -16,19 +16,6 @@
 <div>
     <button href="/about"  ng-click="ctrl.showEdit( travel )">edit</button>
     <button ng-click="ctrl.deleteTravel( travel._id )">remove</button>
-
-
-
-
-    <div >
-        <!-- <div ng-repeat="travel in ctrl.travels"></div> -->
-     
-
-            <div class='widget' data-origin-geo-lookup="true" data-skyscanner-widget="LocationWidget" data-currency="USD" data-whitelabeldomain="whitelabeldemo.skyscanner.net"
-                data-destination-name="{{ travel.destination }}"></div>
-    </div>
-
-
 
 
 </div>
