@@ -51,9 +51,9 @@ Bibliography:
 
 Special Thanks to Tyler Goodman, Sean Byrne, Josefina Mancilla for help on the edit route and edit modal.
 
--Amadeus Hotel info: https://sandbox.amadeus.com/api-catalog#hotel_apis
--Sky Scanner widget for Airline search: https://partners.skyscanner.net/affiliates/widgets-quick-start
--Animations and AOS library: https://css-tricks.com/aos-css-driven-scroll-animation-library/
+- Amadeus Hotel info: https://sandbox.amadeus.com/api-catalog#hotel_apis
+- Sky Scanner widget for Airline search: https://partners.skyscanner.net/affiliates/widgets-quick-start
+- Animations and AOS library: https://css-tricks.com/aos-css-driven-scroll-animation-library/
 
 
 
