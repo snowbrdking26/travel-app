@@ -40,7 +40,9 @@ We created a travel blog where users can share itineraries from vacations and al
 
 
 <br>
+
 ## Author
+
 - Peter King, Demetrius Robinson, and Mandy Tong
 - [Heroku Link:](https://travel-tripn.herokuapp.com/)
 
@@ -51,10 +53,8 @@ Special Thanks to Tyler Goodman, Sean Byrne, Josefina Mancilla for help on the e
 
 Amadeus Hotel info:
 https://sandbox.amadeus.com/api-catalog#hotel_apis
-
 Sky Scanner widget for Airline search:
 https://partners.skyscanner.net/affiliates/widgets-quick-start
-
 Animations and AOS library:
 https://css-tricks.com/aos-css-driven-scroll-animation-library/
 
