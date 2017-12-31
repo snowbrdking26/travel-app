@@ -46,4 +46,6 @@ We created a travel blog where users can share itineraries from vacations and al
 - Peter King, Demetrius Robinson, and Mandy Tong
 - [Heroku Link:](https://travel-tripn.herokuapp.com/)
 
+Special Thanks to Tyler Goodman, Sean Byrne, Josefina Mancilla for help on the edit route and edit modal.
+
 <br>

@@ -115,20 +115,13 @@ app.controller('MainController', ['$http', function ($http) {
     }
 
     this.editTravel = () => {
-        console.log('edit submit...', this.currentTravelEdit);
         this.edittedData = this.currentTravelEdit;
         $http({
             method: 'PUT',
             url: '/travels/' + this.currentTravelEdit._id,
             data: this.currentTravelEdit
         }).then((response) => {
-            console.log("+++++++++++++++");
-            console.log(this.edittedData);
-            console.log(this.currentTravelEdit);
-            console.log('data:', response.data);
             const updateByIndex = this.travels.findIndex(travel => travel._id === this.edittedData._id)
-            console.log('update ind:', updateByIndex);
-            console.log(this.travels[updateByIndex]);
             this.travels[updateByIndex] = this.edittedData;
         }).catch(err => console.error('Catch', err));
         this.editModal = false;
@@ -145,7 +138,6 @@ app.controller('MainController', ['$http', function ($http) {
     this.chooseOneTravel = (travel) => {
         this.travel = travel;
         this.editData = travel;
-        // console.log(this.travel.destination);
     }
 
     /////-Add travel---
