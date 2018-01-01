@@ -49,7 +49,7 @@ We created a travel blog where users can share itineraries from vacations and al
 
 ## Bibliography:
 
-A Special Thank You to Tyler Goodman and Sean Byrne, Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th. Thank you to Karolin for Holidays App example with CRUD routes. Thank you to Thom for Books App example with augular login authentication.
+A Special Thank You to Tyler Goodman and Sean Byrne, Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th. Thank you to Karolin for Holidays App example with CRUD routes from w08d03. Thank you to Thom for Books App example with augular login authentication from w08d04.
 
 - Angular Create and Edit route from Ben Foster jsfiddle: https://jsfiddle.net/benfosterdev/UWLFJ/
 - Angular Routing: https://www.w3schools.com/angular/tryit.asp?filename=try_ng_routing
