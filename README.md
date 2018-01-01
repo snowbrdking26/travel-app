@@ -49,18 +49,25 @@ We created a travel blog where users can share itineraries from vacations and al
 
 ## Bibliography:
 
-A Special Thank You to Tyler Goodman and Sean Byrne, Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th.
+A Special Thank You to Tyler Goodman and Sean Byrne, Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th. Thank you to Karolin for Holidays App example with CRUD routes. Thank you to Thom for Books App example with augular login authentication.
 
-- Amadeus Hotel info: https://sandbox.amadeus.com/api-catalog#hotel_apis
-- Sky Scanner widget for Airline search: https://partners.skyscanner.net/affiliates/widgets-quick-start
-- Animations and AOS library: https://css-tricks.com/aos-css-driven-scroll-animation-library/
-- w3schools Animations: https://www.w3schools.com/css/css3_animations.asp
+- Angular Create and Edit route from Ben Foster jsfiddle: https://jsfiddle.net/benfosterdev/UWLFJ/
 - Angular Routing: https://www.w3schools.com/angular/tryit.asp?filename=try_ng_routing
 - Angular ng-repeat https://docs.angularjs.org/api/ng/directive/ngRepeat
 - Angualar ng-show/hide: https://stackoverflow.com/questions/12599637/angularjs-ng-show-ng-hide
+
+- Amadeus API Hotel info: https://sandbox.amadeus.com/api-catalog#hotel_apis
+- Amadeus API Flights info: https://sandbox.amadeus.com/travel-innovation-sandbox/apis/get/flights/inspiration-search
+- Sky Scanner widget for Airline search: https://partners.skyscanner.net/affiliates/widgets-quick-start
 - Static maps: https://developers.google.com/maps/documentation/static-maps/intro#location
+
+- Animations and AOS library: https://css-tricks.com/aos-css-driven-scroll-animation-library/
 - Images: https://unsplash.com/
 - Images: https://www.pexels.com/royalty-free-images/
-- Ben Foster jsfiddle: https://jsfiddle.net/benfosterdev/UWLFJ/
+- w3schools Animations: https://www.w3schools.com/css/css3_animations.asp
+- w3schools Carousel Plugin: https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+- w3schools Templates: https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+- w3schools Templates: https://www.w3schools.com/css/css_rwd_templates.asp
+
 
 <br>
