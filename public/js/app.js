@@ -107,15 +107,12 @@ app.controller('MainController', ['$http', function ($http) {
     }
 
     /////------------edit below--------
-    // Special thank to Special Thanks to Tyler Goodman, Sean Byrne, Josefina Mancilla for help on the edit route and edit modal.
+    // Special Thanks to Tyler Goodman and Sean Byrne, Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th.
 
     // Update travel
-    this.showEdit = (travel) => {
-        this.currentTravelEdit = angular.copy(travel)
-    }
-
-    this.editTravel = () => {
-        this.edittedData = this.currentTravelEdit;
+ 
+    this.editTravel = (travel) => {
+        this.currentTravelEdit = travel;
         $http({
             method: 'PUT',
             url: '/travels/' + this.currentTravelEdit._id,
@@ -124,13 +121,11 @@ app.controller('MainController', ['$http', function ($http) {
             const updateByIndex = this.travels.findIndex(travel => travel._id === this.edittedData._id)
             this.travels[updateByIndex] = this.edittedData;
         }).catch(err => console.error('Catch', err));
-        this.currentTravelEdit = {};
     };
 
-    this.dontUpdate = () => {
-        this.currentTravelEdit = {};
-    }
+
     /////-end of editting-----------------
+
 
     /////--choose travel info-------------------
     this.chooseOneTravel = (travel) => {

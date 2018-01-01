@@ -10,8 +10,6 @@ const Location = require('../models/travels.js');
 
 router.post('/login', async (req, res) => {
 
-    console.log('in the login route');
-    console.log(req.body);
     console.log('==============================');
 
     try {

@@ -7,17 +7,29 @@
             <span> Climate: </span> {{ travel.climate }} </h6>
         <h6 class="h6left">
             <span> Kid Friendly:</span> {{ travel.kid_friendly }}</h6>
-        <p>
+        <p >
             <span> Dates: </span> {{ travel.dates }}</p>
 
         <p>
             <span></span> {{ travel.description }}</p>
 
 <div>
-    <button href="/about"  ng-click="ctrl.showEdit( travel )">edit</button>
     <button ng-click="ctrl.deleteTravel( travel._id )">remove</button>
 
+     <!-- Show HTML: -->
+    Edit Info <input type="checkbox" ng-model="myVar" ng-click="ctrl.editTravel( travel )">
+    
+    <div ng-show="myVar">
+
+            <!-- Beginning update/edit form  -->
+            <!-- ////// Edit Form partials////-->
+            <div ng-include="'partials/edit_form.html'"></div>
+            <!--//////  end partials//// -->
+    </div>
 
 </div>
+
+
+
 </div>
 </div>

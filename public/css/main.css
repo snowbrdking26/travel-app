@@ -148,14 +148,6 @@ h6 {
     padding-left: 0;
   }
 
-  .modal-text-box{
-    /*position: relative;
-    margin-top: 400px;
-    z-index: 100000000000;*/
-    position: fixed;
-    z-index: 1000000001 !important;
-  }
-
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
@@ -178,8 +170,6 @@ h6 {
     margin-top: 120px;
   }
 }
-
-
 
 .detailsAbstract {
 	/* height: 210px; */
@@ -549,7 +539,7 @@ margin: 5% 20%;
     /* border: 1px solid black; */
 }
 
-.modal-text-box {
+.editInfo {
   position:relative;
   text-align: center;
 	background-color: white;
@@ -557,7 +547,7 @@ margin: 5% 20%;
   /*left:30%;*/
   margin-top: 200px;
 	height: 398px;
-	width: 498px;
+	width: 258px;
 	border-radius: 2px;
 	box-shadow: 0 2px 2px rgba(0,0,0,.2);
   text-align: left;

@@ -1,6 +1,7 @@
-    <div class="modal-text-box">
+
+    <div class="editInfo">
         <h6 class="h6Forms">Edit Form</h6>
-        <form class="editModalForm" ng-submit="ctrl.editTravel()" class="center">
+        <form class="editTextForm" ng-submit="ctrl.editTravel()" class="center">
             <div class="inlineBlock">
                 <input type="text" ng-model="ctrl.currentTravelEdit.destination" placeholder="Destination">
             </div>
@@ -21,7 +22,7 @@
             <input type="img" ng-model="ctrl.currentTravelEdit.img" placeholder="Image URL">
           </div>
         <textarea style="overflow:hidden" rows="4" cols="40" ng-model="ctrl.currentTravelEdit.description">
-        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+        <!-- At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. -->
         </textarea>
         <br>
         <input type="submit" value="Update Travel Destination" class="updateBtn">
