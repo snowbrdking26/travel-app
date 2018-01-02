@@ -49,13 +49,13 @@ We created a travel blog where users can share itineraries from vacations and al
 
 ## Bibliography:
 
-A Special Thank You to Tyler Goodman, Sean Byrne and Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th. Thank you to instructor Karolin for Holidays App example with CRUD routes from w08d03. Thank you to instructor Thom for Books App example with augular login authentication from w08d04.
+A Special Thank You to Tyler Goodman, Sean Byrne and Josefina Mancilla for an example of an edit route and edit modal from w08d04 homework December 14th. Thank you to instructor Karolin for Holidays App example with CRUD routes from w08d03. Thank you to instructor Thom for Books App example with augular login authentication from w08d04.
 
 - Angular Create and Edit route from Ben Foster jsfiddle: https://jsfiddle.net/benfosterdev/UWLFJ/
 - Angular Routing: https://www.w3schools.com/angular/tryit.asp?filename=try_ng_routing
 - Angular ng-repeat https://docs.angularjs.org/api/ng/directive/ngRepeat
 - Angualar ng-show/hide: https://stackoverflow.com/questions/12599637/angularjs-ng-show-ng-hide
-- Angular ng-container: http://jsfiddle.net/awolf2904/hcyj3q6q/
+- Angular ng-template: http://jsfiddle.net/awolf2904/hcyj3q6q/
 
 - Amadeus API Hotel info: https://sandbox.amadeus.com/api-catalog#hotel_apis
 - Amadeus API Flights info: https://sandbox.amadeus.com/travel-innovation-sandbox/apis/get/flights/inspiration-search
