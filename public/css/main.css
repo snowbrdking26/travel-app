@@ -427,7 +427,8 @@ textarea {
     text-align: center;
     /* background-color: #BFD8D4; */
     margin: 0 auto;
-    padding: 10px 5px;
+    padding: 10px 15px;
+    width:60%;
 }
 .container {
   width: 100% !important;
@@ -480,42 +481,13 @@ table {
 }
 
 
-/* //-----Modals---------------- */
 
-.modalType {
-	background-color: rgba(0,0,0,.2);
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 3;
-	overflow: auto;
-    display:none;
-}
-
-
-
-.editModal {
-  display: inline-block;
-}
-
-.editModalForm {
-    margin: 5%;
-}
-
-.modalOpenLogin {
-  display: inline-block;
-}
-
-.modalOpenRegister {
-  display: inline-block;
-}
-
-.modalH2 {
+.sideNavH2 {
   color: black;
   text-align: center;
 }
+
+
 
 
 /* Sky Scanner Flights */
@@ -527,8 +499,6 @@ margin: 5% 20%;
   margin: 5px;
   display: block;
 }
-
-
 /* end sky scanner */
 
 .third {
@@ -559,3 +529,58 @@ margin: 5% 20%;
 /*input:hover{
   transition: scale(1.1);
 }*/
+
+/*side nav*/
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 60px 0 0 10px;
+}
+
+.sidenav a {
+    padding: 12px 8px 12px 12px;
+    text-decoration: none;
+    color: #71697A;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+}
+
+/* .form-group {
+  margin: 0 50px 0 0;
+}
+
+.form-control{
+  margin: 0 50px 0 0;
+} */
+
+.formWidth {
+  width: 90%;
+}
+
+.sidenav {
+  width: 0px;
+  font-size: 20px;
+}
+
+.sidenav a:hover {
+  color: #71697A
+}
+.closebtn {
+    position: absolute;
+    top: 0px;
+    color: #71697A;
+    margin: 50px 5px 5px 5px;
+    padding: 5px 5px;
+    font-size: 36px;
+}
+

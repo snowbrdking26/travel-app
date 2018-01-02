@@ -32,17 +32,16 @@
 
 <body ng-app="TravelsApp" ng-controller="MainController as ctrl">
 
-    <!--//////  Partials login-form ////-->
-    <div ng-include="'partials/login_form.html'"></div>
-    <!--//////  end of partials ////-->
 
-    <!-- ////// Partials Register Form ////-->
-    <div ng-include="'partials/register.html'"></div>
-    <!--//////  end partials//// -->
+
+   
 
     <!--//////  Partials nav ////-->
     <div class="is-visible" ng-include="'partials/nav.html'"></div>
     <!--////// end of partials ////-->
+
+
+
 
 
     <!-- Automatic Slideshow Images -->
@@ -137,6 +136,38 @@
     </div>
 
 
+<!-- side nav login -->
+    <nav class="newNavBar">
+        
+        <div class="NewNavBarLoginRegister">
+            
+            <div class="sidenav" id="mySidenav">
+                <a class="closebtn" ng-click="ctrl.closeNav()">&times;</a>
+                <!--//////  Partials login-form ////-->
+                <div ng-include="'partials/login_form.html'"></div>
+                <!--//////  end of login partial ////-->
+            </div>
+    
+        </div>
+    </nav>
+
+<!-- side nav Register -->
+<nav class="newNavBar">
+  
+    <div class="NewNavBarLoginRegister">
+
+        <div class="sidenav" id="mySideNavRegister">
+            <a class="closebtn" ng-click="ctrl.closeNavRegister()">&times;</a>
+            <!-- ////// Partials Register Form ////-->
+            <div ng-include="'partials/register.html'"></div>
+            <!--//////  end partials//// -->
+        </div>
+
+    </div>
+</nav>
+<!-- end of side nav -->
+
+    
 
     <div class="containerOne">
         <!-- create form below-->

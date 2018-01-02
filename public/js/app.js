@@ -19,7 +19,6 @@ app.controller('MainController', ['$http', function ($http) {
             .then(response => {
                 console.log('We have success!');
                 this.user = response.data;
-                this.closeRegisterModal();
             }, ex => {
                 console.log('user already exists');
                 console.log(ex.data.err);
@@ -37,7 +36,6 @@ app.controller('MainController', ['$http', function ($http) {
                 console.log(response.data);
                 this.user = response.data.user;
                 console.log(this.user);
-                this.closeLoginModal();
                 // this.location = response.data;
             }, ex => {
                 console.log(ex.data.err);
@@ -107,7 +105,7 @@ app.controller('MainController', ['$http', function ($http) {
     }
 
     /////------------edit below--------
-    // Special Thanks to Tyler Goodman and Sean Byrne, Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th.
+    // Special Thanks to Tyler Goodman, Sean Byrne, and Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th.
 
     // Update travel
  
@@ -152,36 +150,28 @@ app.controller('MainController', ['$http', function ($http) {
       $('.navbar-toggle').class('');
     }
 
-    //-Modal---open/close------------------
-    this.showLoginModal = () => {
-        console.log('opening model');
-        this.modalOpenLogin = true;
+  
 
-    }
-
-    this.closeLoginModal = () => {
-        console.log('closing model');
-        this.modalOpenLogin = false;
-
-    }
-    this.showRegisterModal = () => {
-        console.log('opening register model');
-        this.modalOpenRegister = true;
-    }
-
-    this.closeRegisterModal = () => {
-        console.log('closing register model');
-        this.modalOpenRegister = false;
-
-    }
-    //--side nav ------------------
+    // side nav menu  -----------------------
+// https://www.w3schools.com/howto/howto_js_sidenav.asp
+    
+    //--side nav open ------------------
     this.openNav = () => {
         document.getElementById("mySidenav").style.width = "350px";
     }
-
-    this.closeNav = () => {
-        document.getElementById("newbar").style.height = "0";
+    this.openRegNav = () => {
+        document.getElementById("mySideNavRegister").style.width = "350px";
     }
+//--side nav close ------------------
+    this.closeNav = () => {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    this.closeNavRegister = () => {
+        document.getElementById("mySideNavRegister").style.width = "0";
+    }
+
+
     //--end--side nav----------------
 
 
@@ -212,13 +202,6 @@ app.controller('MainController', ['$http', function ($http) {
         }
     }
 
-    // When the user clicks anywhere outside of the modal, close it
-    var modal = document.getElementById('ticketModal');
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
 
 
     // -- page routes ------------------
@@ -392,5 +375,5 @@ app.controller('MainController', ['$http', function ($http) {
         duration: 3000
     })
 
-}]);
 
+}]);

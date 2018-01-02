@@ -1,11 +1,7 @@
-<!-- modal -->
-<div class="modalType" ng-class="(ctrl.modalOpenLogin ? 'modalOpenLogin' : '' )">
-    <div class="modal-text-box">
 
-
-
-        <h2 class="modalH2">Login</h2>
-        <form ng-submit='ctrl.loginUser()'>
+        <br><br>
+        <h2 class="sideNavH2">Login</h2>
+        <form class="formWidth" ng-submit='ctrl.loginUser()'>
             <div class="form-group">
                 <label for="pwd">Username:</label>
                 <input type="text" class="form-control" placeholder="username" ng-model="ctrl.loginForm.username" />
@@ -17,7 +13,7 @@
             <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
             </div>
-            <input type="submit" />
+            <input type="submit" ng-click="ctrl.closeNav()"/>
         </form>
 
         <form ng-if='ctrl.user' ng-submit='ctrl.logout()'>
@@ -25,7 +21,6 @@
         </form>
 
 
-        <button ng-click="ctrl.closeLoginModal()">Return to Website</button>
+        <button ng-click="ctrl.closeNav()">Return to Website</button>
 
-    </div>
-</div>
+

@@ -1,13 +1,11 @@
-<!-- modal -->
-<div class="modalType" ng-class="(ctrl.modalOpenRegister ? 'modalOpenRegister' : '' )">
-    <div class="modal-text-box">
 
-        <h2 class="modalH2">Register</h2>
-        <form ng-submit='ctrl.registerUser()'>
+<br><br>
+        <h2 class="sideNavH2">Register</h2>
+        <form class="formWidth" ng-submit='ctrl.registerUser()'>
             <div id="incorrectPassword"></div>
             <label for="username">Username:</label>
             <input type="text" class="form-control" placeholder="username" ng-model="ctrl.newUserForm.username" />
-            <!-- <input type="password" class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="password" ng-model="ctrl.loginForm.password"> -->
+         
 
             <div class="form-group">
                 <label for="pwd">Password:</label>
@@ -16,10 +14,7 @@
             <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
             </div>
-            <input ng-click='ctrl.closeRegisterModal()' type="submit" />
+            <input ng-click='ctrl.closeNavRegister()' type="submit" />
         </form>
 
-        <button ng-click="ctrl.closeRegisterModal()">Return to Website</button>
-
-    </div>
-</div>
+        <button ng-click="ctrl.closeNavRegister()">Return to Website</button>

@@ -26,11 +26,11 @@
                         </li>
                         <!-- if not logged in -->
                         <li ng-if='!ctrl.user'>
-                            <a href="#" ng-click="ctrl.showLoginModal()">
+                            <a href="#" ng-click="ctrl.openNav()">
                                 <span class="glyphicon glyphicon-log-in "></span> Login</a>
                         </li>
                         <li ng-if='!ctrl.user'>
-                            <a href="#" ng-click="ctrl.showRegisterModal()">
+                            <a href="#" ng-click="ctrl.openRegNav()">
                                 <span class="glyphicon glyphicon-user"></span> Sign Up</a>
                         </li>
                         <!-- if logged in -->
