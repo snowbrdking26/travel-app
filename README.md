@@ -70,6 +70,6 @@ A Special Thank You to Tyler Goodman, Sean Byrne and Josefina Mancilla for an ex
 - w3schools Side Nav: https://www.w3schools.com/howto/howto_js_sidenav.asp
 - w3schools Templates: https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 - w3schools Templates: https://www.w3schools.com/css/css_rwd_templates.asp
-
+- Content Insipration from https://www.visiteurope.com/en/trips/
 
 <br>
