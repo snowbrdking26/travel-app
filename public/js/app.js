@@ -105,7 +105,7 @@ app.controller('MainController', ['$http', function ($http) {
     }
 
     /////------------edit below--------
-    // Special Thanks to Tyler Goodman, Sean Byrne, and Josefina Mancilla for help on the edit route and edit modal from w08d04 homework December 14th.
+    // Special Thanks to Tyler Goodman, Sean Byrne, and Josefina Mancilla for an example of an edit route and edit modal from w08d04 homework December 14th.
 
     // Update travel
  
@@ -153,6 +153,7 @@ app.controller('MainController', ['$http', function ($http) {
   
 
     // side nav menu  -----------------------
+
 // https://www.w3schools.com/howto/howto_js_sidenav.asp
     
     //--side nav open ------------------
@@ -173,7 +174,6 @@ app.controller('MainController', ['$http', function ($http) {
 
 
     //--end--side nav----------------
-
 
     //-------------------------------
     // Automatic Slideshow - change image every 4 seconds
@@ -205,7 +205,6 @@ app.controller('MainController', ['$http', function ($http) {
 
 
     // -- page routes ------------------
-
 
     app.controller('ResturantsController', function () {
         this.resturants = 'Tartine';
@@ -285,8 +284,8 @@ app.controller('MainController', ['$http', function ($http) {
 
 
 
-// Travel Info - Amadeus travel request ----------------
 
+// Travel Info - Amadeus travel request ----------------
     // this.destination = {};
     // this.departureDate = [];
     // this.tripDuration = [];
@@ -299,7 +298,6 @@ app.controller('MainController', ['$http', function ($http) {
         this.hotelsParis = response.data.hotelsParis
     })
         .catch(err => console.log(err));
-
 
             this.hotelsParisfunction = () => {
                 console.log('getting hotels Paris array!')
@@ -314,8 +312,6 @@ app.controller('MainController', ['$http', function ($http) {
                 })
                     .catch(err => console.log(err));
             }
-
-
 
     $http({
         url: '/hotelsLondon',
@@ -340,8 +336,6 @@ app.controller('MainController', ['$http', function ($http) {
         })
             .catch(err => console.log(err));
     }
-
-
 
     $http({
         url: '/hotelsJamaica',
