@@ -7,9 +7,11 @@ app.controller('MainController', ['$http', function ($http) {
 
 
 
+
     // ================================
     // LOGIN LOGIC
     // ================================
+
 
     this.error = null;
     this.user = false;
@@ -58,6 +60,7 @@ app.controller('MainController', ['$http', function ($http) {
 
 
     //-----CRUD ROUTES below -------
+
 
 
     this.travel = '';
@@ -289,6 +292,8 @@ app.controller('MainController', ['$http', function ($http) {
 
 
 
+
+    
 
     
 // Travel Info - Amadeus travel request ----------------
