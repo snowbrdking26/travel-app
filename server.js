@@ -10,7 +10,7 @@ require('dotenv').config();
 console.log(process.env.test)
 
 // CONFIG
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/travel_users_api'
 
 // DB

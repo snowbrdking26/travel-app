@@ -4,9 +4,12 @@ const app = angular.module('TravelsApp', ['ngRoute']);
 app.controller('MainController', ['$http', function ($http) {
 
 
-    // ========================================
+
+
+
+    // ================================
     // LOGIN LOGIC
-    // ========================================
+    // ================================
 
     this.error = null;
     this.user = false;
@@ -153,7 +156,6 @@ app.controller('MainController', ['$http', function ($http) {
   
 
     // side nav menu  -----------------------
-
 // https://www.w3schools.com/howto/howto_js_sidenav.asp
     
     //--side nav open ------------------
@@ -174,6 +176,8 @@ app.controller('MainController', ['$http', function ($http) {
 
 
     //--end--side nav----------------
+
+
 
     //-------------------------------
     // Automatic Slideshow - change image every 4 seconds
@@ -285,6 +289,8 @@ app.controller('MainController', ['$http', function ($http) {
 
 
 
+
+    
 // Travel Info - Amadeus travel request ----------------
     // this.destination = {};
     // this.departureDate = [];

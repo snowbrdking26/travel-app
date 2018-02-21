@@ -1,6 +1,4 @@
-*{
-  /*opacity: .9;*/
-}
+
 .w3-padding{
   list-style: none;
 }
@@ -9,28 +7,21 @@
 }
 
 @keyframes Items {
-  0%{
-    opacity: 0;
-  },
-  100%{
-    opacity: 1;
-  }
+  from { opacity: 0;}
+  to { opacity: 1;}
 }
 
 body {
-
   padding-bottom: 40px;
-
   color: #5a5a5a;
   font-family: 'Open Sans Condensed', sans-serif;
-  font weight: 400px;
-  background: #f4f4f4;
-
+  font-weight: 400px;
+  background-color: #f4f4f4;
 }
 
 h3, h4, p, b, h6 {
   font-family: 'Open Sans Condensed', sans-serif;
-  font weight: 400px;
+  font-weight: 400px;
 }
 
 h6 {
@@ -40,7 +31,6 @@ h6 {
   }
 
 .h6left {
-
   text-align: left;
   }
 
