@@ -267,10 +267,18 @@ app.controller('MainController', ['$http', function ($http) {
 
     }]);
 
-    //-----google map ---------------------
 
 
-    //To use this code on your website, get a free key from Google.
+
+
+
+
+    
+    // -----google map ---------------------
+
+
+
+    // To use this code on your website, get a free key from Google.
     // Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
     // function myMap() {
@@ -288,14 +296,9 @@ app.controller('MainController', ['$http', function ($http) {
     //     marker.setMap(map);
     // }
 
-
-
-
-
-
     
 
-    
+
 // Travel Info - Amadeus travel request ----------------
     // this.destination = {};
     // this.departureDate = [];
